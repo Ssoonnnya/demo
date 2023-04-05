@@ -1,4 +1,5 @@
 <?php
+
 class Database
 {
     public $connection;
@@ -12,7 +13,7 @@ class Database
         ]);
     }
 
-    public function query($query, $params =[])
+    public function query($query, $params = [])
     {
         $statement = $this->connection->prepare($query);
 
@@ -21,4 +22,5 @@ class Database
         return $statement;
     }
 }
+
 ?>
