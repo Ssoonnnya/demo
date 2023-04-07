@@ -1,16 +1,13 @@
 <?php
 
-$config = require('config.php');
-$db = new Database($config['database']);
+$heading = "Create Note";
 
-$heading = 'Note';
-$currentUserId = 1;
+if($_SERVER["REQUEST_METHOD"] === "POST")
+{
 
-$note = $db->query('select * from notes where id = :id', [
-    'id' => $_GET['id']
-])->findOrFail();
 
-authorize($note['user_id'] === $currentUserId);
+}
+
 
 require "view/note.view.php";
 
