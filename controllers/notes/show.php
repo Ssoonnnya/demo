@@ -8,7 +8,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST")
 
 }
 
-
-require "view/note.view.php";
+require "view/notes/show.view.php";
 
 ?>
