@@ -13,7 +13,7 @@
                                 <label for="body" class="block text-sm font-medium text-gray-700">Body</label>
 
                                 <div class="mt-1">
-                                    <textarea 
+                                    <input 
                                     id="body" 
                                     name="body"
                                      rows="3"
@@ -21,7 +21,7 @@
                                     placeholder="Here's an idea for a note..."
                                     
                                     
-                                    ><?= $_POST["body"] ?? "" ?></textarea>
+                                    ><?= $_POST["body"] ?? "" ?></input>
                                     
                                    <?php if(isset($errors["body"])) :?>
                                     <p class="text-red-500 text-xs mt-2"><?= $errors["body"]?></p>
