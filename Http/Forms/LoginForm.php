@@ -33,6 +33,12 @@ public function errors(){
 
 }
 
+public function error($field, $message){
+
+    $this->errors[$field] = $message;
+
+}
+
 }
 
 ?>
