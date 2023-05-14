@@ -46,6 +46,12 @@ function dd($arg) {
     var_dump($arg);die();
 }
 
+function old($key, $default = ''){
+
+  return  Core\Session::get('old')['key'] ?? $default;
+
+}
+
 
 
 ?>
